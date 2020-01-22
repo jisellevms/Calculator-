@@ -8,8 +8,8 @@ export default props => {
     if(props.operation) stylesButton.push(style.operationButton)
 
     return (
-        <TouchableHighlight onPress={props.onclick}>
-            <Text style={style.stylesButton}>
+        <TouchableHighlight onPress={props.onClick}>
+            <Text style={stylesButton}>
                 {props.label}
             </Text>
         </TouchableHighlight>
@@ -27,7 +27,6 @@ const style = StyleSheet.create({
         borderColor: '#888',
     },
     operationButton: {
-        color: '#fff',
         backgroundColor: '#ffb6c1'
     },
     buttonDouble: {
